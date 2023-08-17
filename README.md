@@ -1,4 +1,4 @@
-# BlogIntel: Sentiment Analysis Project with Multiprogramming
+# BlogIntel: Sentiment Analysis Project 
 
 This project aims to classify the sentiment of blog post data as positive or negative using predefined positive and negative word lists and calculate various readability indexes such as sentiment index, fog index etc. Multiprogramming is implemented to reduce the time of execution. The text data is collected from over 100+ blog pages.
 
