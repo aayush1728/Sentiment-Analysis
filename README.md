@@ -152,20 +152,3 @@ Plots: `gru_results_val_f1_curve.png`, `gru_results_loss_curves.png`,
 | `gru_IMDB-Dataset.csv` | 50k labeled movie reviews used for training |
 | `gru_results_RESULTS.md` / `gru_results.json` | Metrics from the run reported above |
 | `gru_results_*.png` | Training curves and confusion matrices from the run |
-
-## Suggested resume line
-
-> Built and compared GRU and Transformer-based sentiment classifiers
-> trained from scratch on 50k IMDB reviews, evaluating accuracy, F1, AUC,
-> training time and inference latency; extended an earlier lexicon-based
-> sentiment pipeline into a full supervised learning benchmark.
-
-## Possible next steps
-
-- Add a pretrained DistilBERT fine-tuning arm to separate "attention as
-  architecture" from "attention + large-scale pretraining."
-- Deploy a small Streamlit/Gradio demo comparing all three approaches
-  side by side on user-entered text.
-- Add attention-weight visualization for interpretability.
-- Add statistical significance testing (bootstrap CIs) across multiple
-  random seeds.
