@@ -1,0 +1,38 @@
+{
+  "config": {
+    "csv_path": "data/IMDB-Dataset.csv",
+    "max_samples": 6000,
+    "max_len": 120,
+    "vocab_size": 20000,
+    "batch_size": 32,
+    "epochs": 4,
+    "embed_dim": 100,
+    "hidden_dim": 100,
+    "num_layers": 2,
+    "num_heads": 4,
+    "lr": 0.001,
+    "out_dir": "results"
+  },
+  "results": {
+    "GRU": {
+      "params": 2302801,
+      "train_time_sec": 280.1063828468323,
+      "test_accuracy": 0.7066666666666667,
+      "test_f1": 0.7066666666666667,
+      "test_precision": 0.6958424507658644,
+      "test_recall": 0.7178329571106095,
+      "test_auc": 0.7838192945453468,
+      "inference_ms_per_example": 1.166129857301712
+    },
+    "Transformer": {
+      "params": 2162501,
+      "train_time_sec": 192.7899408340454,
+      "test_accuracy": 0.7311111111111112,
+      "test_f1": 0.762278978388998,
+      "test_precision": 0.6747826086956522,
+      "test_recall": 0.8758465011286681,
+      "test_auc": 0.8103985655788315,
+      "inference_ms_per_example": 1.5119392424821854
+    }
+  }
+}
